@@ -1,0 +1,4 @@
+[console_scripts]
+publisher = my_py_pkg.publisher:main
+subscriber = my_py_pkg.subscriber:main
+
