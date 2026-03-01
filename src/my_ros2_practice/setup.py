@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'publisher = my_ros2_practice.random_publishers:main',
+            'subscriber = my_ros2_practice.random_subscribers:main'
         ],
     },
 )

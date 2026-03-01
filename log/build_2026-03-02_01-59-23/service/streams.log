@@ -1,0 +1,41 @@
+[1.065s] Invoking command in '/home/lunog/ros2_ws/src/service': PYTHONPATH=/home/lunog/ros2_ws/build/service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunog/ros2_ws/install/service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service build --build-base /home/lunog/ros2_ws/build/service/build install --record /home/lunog/ros2_ws/build/service/install.log --single-version-externally-managed install_data
+[1.286s] running egg_info
+[1.286s] creating ../../build/service/service.egg-info
+[1.287s] writing ../../build/service/service.egg-info/PKG-INFO
+[1.287s] writing dependency_links to ../../build/service/service.egg-info/dependency_links.txt
+[1.287s] writing entry points to ../../build/service/service.egg-info/entry_points.txt
+[1.287s] writing requirements to ../../build/service/service.egg-info/requires.txt
+[1.287s] writing top-level names to ../../build/service/service.egg-info/top_level.txt
+[1.288s] writing manifest file '../../build/service/service.egg-info/SOURCES.txt'
+[1.290s] reading manifest file '../../build/service/service.egg-info/SOURCES.txt'
+[1.290s] writing manifest file '../../build/service/service.egg-info/SOURCES.txt'
+[1.290s] running build
+[1.290s] running build_py
+[1.291s] creating /home/lunog/ros2_ws/build/service/build
+[1.291s] creating /home/lunog/ros2_ws/build/service/build/lib
+[1.291s] creating /home/lunog/ros2_ws/build/service/build/lib/service
+[1.291s] copying service/server.py -> /home/lunog/ros2_ws/build/service/build/lib/service
+[1.291s] copying service/__init__.py -> /home/lunog/ros2_ws/build/service/build/lib/service
+[1.291s] copying service/client.py -> /home/lunog/ros2_ws/build/service/build/lib/service
+[1.291s] running install
+[1.291s] running install_lib
+[1.292s] creating /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service
+[1.292s] copying /home/lunog/ros2_ws/build/service/build/lib/service/server.py -> /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service
+[1.292s] copying /home/lunog/ros2_ws/build/service/build/lib/service/__init__.py -> /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service
+[1.292s] copying /home/lunog/ros2_ws/build/service/build/lib/service/client.py -> /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service
+[1.293s] byte-compiling /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service/server.py to server.cpython-310.pyc
+[1.293s] byte-compiling /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service/__init__.py to __init__.cpython-310.pyc
+[1.293s] byte-compiling /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service/client.py to client.cpython-310.pyc
+[1.294s] running install_data
+[1.294s] creating /home/lunog/ros2_ws/install/service/share/ament_index
+[1.294s] creating /home/lunog/ros2_ws/install/service/share/ament_index/resource_index
+[1.294s] creating /home/lunog/ros2_ws/install/service/share/ament_index/resource_index/packages
+[1.294s] copying resource/service -> /home/lunog/ros2_ws/install/service/share/ament_index/resource_index/packages
+[1.294s] copying package.xml -> /home/lunog/ros2_ws/install/service/share/service
+[1.294s] running install_egg_info
+[1.296s] Copying ../../build/service/service.egg-info to /home/lunog/ros2_ws/install/service/lib/python3.10/site-packages/service-0.0.0-py3.10.egg-info
+[1.296s] running install_scripts
+[1.317s] Installing client script to /home/lunog/ros2_ws/install/service/lib/service
+[1.317s] Installing server script to /home/lunog/ros2_ws/install/service/lib/service
+[1.318s] writing list of installed files to '/home/lunog/ros2_ws/build/service/install.log'
+[1.381s] Invoked command in '/home/lunog/ros2_ws/src/service' returned '0': PYTHONPATH=/home/lunog/ros2_ws/build/service/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunog/ros2_ws/install/service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/service build --build-base /home/lunog/ros2_ws/build/service/build install --record /home/lunog/ros2_ws/build/service/install.log --single-version-externally-managed install_data
