@@ -24,6 +24,11 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'publisher = multi_subscriber_demo.random_publisher_1:main',
+            'sub_big = multi_subscriber_demo.subscriber_1:main',
+            'sub_even = multi_subscriber_demo.subscriber_2:main',
+            'sub_avg = multi_subscriber_demo.subscriber_3:main'
+
         ],
     },
 )

@@ -1,0 +1,50 @@
+running egg_info
+creating ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info
+writing ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/PKG-INFO
+writing dependency_links to ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/dependency_links.txt
+writing entry points to ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/entry_points.txt
+writing requirements to ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/requires.txt
+writing top-level names to ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/top_level.txt
+writing manifest file '../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/SOURCES.txt'
+reading manifest file '../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/SOURCES.txt'
+writing manifest file '../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/lunog/ros2_ws/build/multi_subscriber_demo/build
+creating /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib
+creating /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+copying multi_subscriber_demo/subscriber_1.py -> /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+copying multi_subscriber_demo/random_publisher_1.py -> /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+copying multi_subscriber_demo/import rclpy.py -> /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+copying multi_subscriber_demo/subscriber_2.py -> /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+copying multi_subscriber_demo/subscriber_3.py -> /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+copying multi_subscriber_demo/__init__.py -> /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo
+running install
+running install_lib
+creating /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+copying /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo/subscriber_1.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+copying /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo/random_publisher_1.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+copying /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo/import rclpy.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+copying /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo/subscriber_2.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+copying /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo/subscriber_3.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+copying /home/lunog/ros2_ws/build/multi_subscriber_demo/build/lib/multi_subscriber_demo/__init__.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo
+byte-compiling /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo/subscriber_1.py to subscriber_1.cpython-310.pyc
+byte-compiling /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo/random_publisher_1.py to random_publisher_1.cpython-310.pyc
+byte-compiling /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo/import rclpy.py to import rclpy.cpython-310.pyc
+byte-compiling /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo/subscriber_2.py to subscriber_2.cpython-310.pyc
+byte-compiling /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo/subscriber_3.py to subscriber_3.cpython-310.pyc
+byte-compiling /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index
+creating /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index/resource_index
+creating /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index/resource_index/packages
+copying resource/multi_subscriber_demo -> /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index/resource_index/packages
+copying package.xml -> /home/lunog/ros2_ws/install/multi_subscriber_demo/share/multi_subscriber_demo
+running install_egg_info
+Copying ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info to /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo-0.0.0-py3.10.egg-info
+running install_scripts
+Installing publisher script to /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/multi_subscriber_demo
+Installing sub_avg script to /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/multi_subscriber_demo
+Installing sub_big script to /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/multi_subscriber_demo
+Installing sub_even script to /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/multi_subscriber_demo
+writing list of installed files to '/home/lunog/ros2_ws/build/multi_subscriber_demo/install.log'
