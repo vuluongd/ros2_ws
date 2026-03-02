@@ -40,6 +40,8 @@ creating /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index/res
 creating /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index/resource_index/packages
 copying resource/multi_subscriber_demo -> /home/lunog/ros2_ws/install/multi_subscriber_demo/share/ament_index/resource_index/packages
 copying package.xml -> /home/lunog/ros2_ws/install/multi_subscriber_demo/share/multi_subscriber_demo
+creating /home/lunog/ros2_ws/install/multi_subscriber_demo/share/multi_subscriber_demo/launch
+copying launch/multi_demo.launch.py -> /home/lunog/ros2_ws/install/multi_subscriber_demo/share/multi_subscriber_demo/launch
 running install_egg_info
 Copying ../../build/multi_subscriber_demo/multi_subscriber_demo.egg-info to /home/lunog/ros2_ws/install/multi_subscriber_demo/lib/python3.10/site-packages/multi_subscriber_demo-0.0.0-py3.10.egg-info
 running install_scripts
