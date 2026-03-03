@@ -1,0 +1,35 @@
+[0.673s] Invoking command in '/home/lunog/ros2_ws/src/my_param': PYTHONPATH=/home/lunog/ros2_ws/build/my_param/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunog/ros2_ws/install/my_param/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_param build --build-base /home/lunog/ros2_ws/build/my_param/build install --record /home/lunog/ros2_ws/build/my_param/install.log --single-version-externally-managed install_data
+[0.893s] running egg_info
+[0.893s] creating ../../build/my_param/my_param.egg-info
+[0.893s] writing ../../build/my_param/my_param.egg-info/PKG-INFO
+[0.894s] writing dependency_links to ../../build/my_param/my_param.egg-info/dependency_links.txt
+[0.894s] writing entry points to ../../build/my_param/my_param.egg-info/entry_points.txt
+[0.894s] writing requirements to ../../build/my_param/my_param.egg-info/requires.txt
+[0.894s] writing top-level names to ../../build/my_param/my_param.egg-info/top_level.txt
+[0.897s] writing manifest file '../../build/my_param/my_param.egg-info/SOURCES.txt'
+[0.898s] reading manifest file '../../build/my_param/my_param.egg-info/SOURCES.txt'
+[0.898s] adding license file 'LICENSE'
+[0.899s] writing manifest file '../../build/my_param/my_param.egg-info/SOURCES.txt'
+[0.899s] running build
+[0.899s] running build_py
+[0.899s] creating /home/lunog/ros2_ws/build/my_param/build
+[0.899s] creating /home/lunog/ros2_ws/build/my_param/build/lib
+[0.899s] creating /home/lunog/ros2_ws/build/my_param/build/lib/my_param
+[0.899s] copying my_param/__init__.py -> /home/lunog/ros2_ws/build/my_param/build/lib/my_param
+[0.899s] running install
+[0.899s] running install_lib
+[0.900s] creating /home/lunog/ros2_ws/install/my_param/lib/python3.10/site-packages/my_param
+[0.900s] copying /home/lunog/ros2_ws/build/my_param/build/lib/my_param/__init__.py -> /home/lunog/ros2_ws/install/my_param/lib/python3.10/site-packages/my_param
+[0.900s] byte-compiling /home/lunog/ros2_ws/install/my_param/lib/python3.10/site-packages/my_param/__init__.py to __init__.cpython-310.pyc
+[0.901s] running install_data
+[0.901s] creating /home/lunog/ros2_ws/install/my_param/share/ament_index
+[0.901s] creating /home/lunog/ros2_ws/install/my_param/share/ament_index/resource_index
+[0.901s] creating /home/lunog/ros2_ws/install/my_param/share/ament_index/resource_index/packages
+[0.901s] copying resource/my_param -> /home/lunog/ros2_ws/install/my_param/share/ament_index/resource_index/packages
+[0.901s] copying package.xml -> /home/lunog/ros2_ws/install/my_param/share/my_param
+[0.901s] running install_egg_info
+[0.902s] Copying ../../build/my_param/my_param.egg-info to /home/lunog/ros2_ws/install/my_param/lib/python3.10/site-packages/my_param-0.0.0-py3.10.egg-info
+[0.903s] running install_scripts
+[0.919s] Installing my_param_node script to /home/lunog/ros2_ws/install/my_param/lib/my_param
+[0.919s] writing list of installed files to '/home/lunog/ros2_ws/build/my_param/install.log'
+[0.940s] Invoked command in '/home/lunog/ros2_ws/src/my_param' returned '0': PYTHONPATH=/home/lunog/ros2_ws/build/my_param/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunog/ros2_ws/install/my_param/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_param build --build-base /home/lunog/ros2_ws/build/my_param/build install --record /home/lunog/ros2_ws/build/my_param/install.log --single-version-externally-managed install_data
