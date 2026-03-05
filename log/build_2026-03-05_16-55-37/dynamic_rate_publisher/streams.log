@@ -1,0 +1,17 @@
+[0.760s] Invoking command in '/home/lunog/ros2_ws/build/dynamic_rate_publisher': PYTHONPATH=/home/lunog/ros2_ws/build/dynamic_rate_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunog/ros2_ws/install/dynamic_rate_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lunog/ros2_ws/build/dynamic_rate_publisher/build --no-deps symlink_data
+[1.018s] running develop
+[1.214s] running egg_info
+[1.214s] writing dynamic_rate_publisher.egg-info/PKG-INFO
+[1.215s] writing dependency_links to dynamic_rate_publisher.egg-info/dependency_links.txt
+[1.215s] writing entry points to dynamic_rate_publisher.egg-info/entry_points.txt
+[1.215s] writing requirements to dynamic_rate_publisher.egg-info/requires.txt
+[1.215s] writing top-level names to dynamic_rate_publisher.egg-info/top_level.txt
+[1.219s] reading manifest file 'dynamic_rate_publisher.egg-info/SOURCES.txt'
+[1.220s] writing manifest file 'dynamic_rate_publisher.egg-info/SOURCES.txt'
+[1.221s] running build_ext
+[1.221s] Creating /home/lunog/ros2_ws/install/dynamic_rate_publisher/lib/python3.10/site-packages/dynamic-rate-publisher.egg-link (link to .)
+[1.222s] Installing dynamic_rate_publisher script to /home/lunog/ros2_ws/install/dynamic_rate_publisher/lib/dynamic_rate_publisher
+[1.222s] 
+[1.222s] Installed /home/lunog/ros2_ws/build/dynamic_rate_publisher
+[1.222s] running symlink_data
+[1.254s] Invoked command in '/home/lunog/ros2_ws/build/dynamic_rate_publisher' returned '0': PYTHONPATH=/home/lunog/ros2_ws/build/dynamic_rate_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lunog/ros2_ws/install/dynamic_rate_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lunog/ros2_ws/build/dynamic_rate_publisher/build --no-deps symlink_data

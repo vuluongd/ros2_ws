@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+dynamic_rate_publisher/__init__.py
+dynamic_rate_publisher/dynamic_rate_publisher.py
+dynamic_rate_publisher.egg-info/PKG-INFO
+dynamic_rate_publisher.egg-info/SOURCES.txt
+dynamic_rate_publisher.egg-info/dependency_links.txt
+dynamic_rate_publisher.egg-info/entry_points.txt
+dynamic_rate_publisher.egg-info/requires.txt
+dynamic_rate_publisher.egg-info/top_level.txt
+dynamic_rate_publisher.egg-info/zip-safe
+resource/dynamic_rate_publisher

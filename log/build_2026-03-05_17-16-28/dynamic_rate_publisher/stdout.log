@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing dynamic_rate_publisher.egg-info/PKG-INFO
+writing dependency_links to dynamic_rate_publisher.egg-info/dependency_links.txt
+writing entry points to dynamic_rate_publisher.egg-info/entry_points.txt
+writing requirements to dynamic_rate_publisher.egg-info/requires.txt
+writing top-level names to dynamic_rate_publisher.egg-info/top_level.txt
+reading manifest file 'dynamic_rate_publisher.egg-info/SOURCES.txt'
+writing manifest file 'dynamic_rate_publisher.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lunog/ros2_ws/install/dynamic_rate_publisher/lib/python3.10/site-packages/dynamic-rate-publisher.egg-link (link to .)
+Installing dynamic_rate_publisher script to /home/lunog/ros2_ws/install/dynamic_rate_publisher/lib/dynamic_rate_publisher
+
+Installed /home/lunog/ros2_ws/build/dynamic_rate_publisher
+running symlink_data

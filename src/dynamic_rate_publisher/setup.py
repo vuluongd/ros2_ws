@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'dynamic_rate_publisher = dynamic_rate_publisher.dynamic_rate_publisher:main'
         ],
     },
 )

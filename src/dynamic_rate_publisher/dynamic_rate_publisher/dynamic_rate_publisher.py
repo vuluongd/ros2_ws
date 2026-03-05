@@ -9,9 +9,7 @@ class CounterNode(Node):
 
         #declare parameter
         self.declare_parameter('publish_rate', 1.0)
-
         self.publisher_ = self.create_publisher(Int32, 'counter', 10)
-
         self.count = 0
 
         #lấy rate ban đầu
@@ -26,7 +24,7 @@ class CounterNode(Node):
     def timer_callback(self):
         msg = Int32()
         msg.data = self.count
-        self.publisher._publish(msg)
+        self.publisher_.publish(msg)
 
         self.get_logger().info(f'Publishing: {self.count}')
         self.count += 1
