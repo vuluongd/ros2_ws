@@ -43,8 +43,10 @@ class TurtleFollower(Node):
         dy = self.leader_pose.y - msg.y
 
         distance = math.sqrt(dx*dx + dy*dy)
-        angle = math.atan2(dy, dx)
+        desired_distance = 1.0
+        error_distance = distance - desired_distance
 
+        angle = math.atan2(dy, dx)
         angle_error = angle - msg.theta
         angle_error = math.atan2(math.sin(angle_error),math.cos(angle_error))
 
@@ -53,7 +55,8 @@ class TurtleFollower(Node):
             cmd.linear.x = 0.0
             cmd.angular.z = 4*angle_error
         else:
-            cmd.linear.x = 1.5*distance
+            max_speed = 2.0
+            cmd.linear.x = min(max_speed, 1.5*error_distance)
             cmd.angular.z = 4*angle_error
 
         self.publisher_.publish(cmd)
