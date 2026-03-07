@@ -8,6 +8,12 @@ class TurtleFollower(Node):
 
     def __init__(self):
         super().__init__('turtle_follower')
+        #ROS 2 parameter
+        self.declare_parameter("desired_distance", 1.0)
+        self.declare_parameter("max_linear_speed", 2.0)
+        self.declare_parameter("kp_linear", 1.5)
+        self.declare_parameter("kp_angular", 4.0)
+        self.declare_parameter("angle_threshold", 0.3)
 
         self.leader_pose = None
 
@@ -39,11 +45,18 @@ class TurtleFollower(Node):
         if self.leader_pose is None:
             return
         
+        desired_distance = self.get_parameter("desired_distance").value
+        max_linear_speed = self.get_parameter("max_linear_speed").value
+        kp_linear = self.get_parameter("kp_linear").value
+        kp_angular = self.get_parameter("kp_angular").value
+        angle_threshold = self.get_parameter("angle_threshold").value
+
+
         dx = self.leader_pose.x - msg.x
         dy = self.leader_pose.y - msg.y
 
         distance = math.sqrt(dx*dx + dy*dy)
-        desired_distance = 1.0
+        
         error_distance = distance - desired_distance
 
         angle = math.atan2(dy, dx)
@@ -51,13 +64,12 @@ class TurtleFollower(Node):
         angle_error = math.atan2(math.sin(angle_error),math.cos(angle_error))
 
         cmd = Twist()
-        if abs(angle_error) > 0.3:
+        if abs(angle_error) > angle_threshold:
             cmd.linear.x = 0.0
-            cmd.angular.z = 4*angle_error
+            cmd.angular.z = kp_angular*angle_error
         else:
-            max_speed = 2.0
-            cmd.linear.x = min(max_speed, 1.5*error_distance)
-            cmd.angular.z = 4*angle_error
+            cmd.linear.x = min(max_linear_speed, kp_linear*error_distance)
+            cmd.angular.z = kp_angular*angle_error
 
         self.publisher_.publish(cmd)
 
