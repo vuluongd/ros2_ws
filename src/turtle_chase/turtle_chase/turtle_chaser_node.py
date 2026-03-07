@@ -45,10 +45,16 @@ class TurtleFollower(Node):
         distance = math.sqrt(dx*dx + dy*dy)
         angle = math.atan2(dy, dx)
 
-        cmd = Twist()
+        angle_error = angle - msg.theta
+        angle_error = math.atan2(math.sin(angle_error),math.cos(angle_error))
 
-        cmd.linear.x = 1.5*distance
-        cmd.angular.z = 4*(angle - msg.theta)
+        cmd = Twist()
+        if abs(angle_error) > 0.3:
+            cmd.linear.x = 0.0
+            cmd.angular.z = 4*angle_error
+        else:
+            cmd.linear.x = 1.5*distance
+            cmd.angular.z = 4*angle_error
 
         self.publisher_.publish(cmd)
 
