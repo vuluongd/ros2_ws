@@ -1,6 +1,7 @@
 package.xml
 setup.cfg
 setup.py
+launch/turtle_leader_follower.launch.py
 resource/turtle_chase
 turtle_chase/__init__.py
 turtle_chase/turtle_chaser_node.py
