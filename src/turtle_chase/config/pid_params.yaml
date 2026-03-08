@@ -1,0 +1,17 @@
+turtle_leader_follower:
+  ros_parameters:
+    desired_distance: 1.0
+    max_linear_speed: 2.0
+
+    #pid cho linear
+    kp_linear: 1.5
+    ki_linear: 0.1
+    kd_linear: 0.2
+
+    #pid cho angle
+    kp_angular: 4.0
+    ki_angular: 0.05
+    kd_angular: 0.3
+
+    angle_threshold: 0.3
+
