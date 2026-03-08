@@ -1,1 +1,0 @@
-/home/lunog/ros2_ws/src/dynamic_rate_publisher/setup.py

@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000351] (-) JobUnselected: {'identifier': 'dynamic_rate_publisher'}
-[0.000388] (-) JobUnselected: {'identifier': 'multi_subscriber_demo'}
-[0.000457] (-) JobUnselected: {'identifier': 'my_param'}
-[0.000513] (-) JobUnselected: {'identifier': 'my_py_pkg'}
-[0.000530] (-) JobUnselected: {'identifier': 'my_ros2_practice'}
-[0.000598] (-) JobUnselected: {'identifier': 'service'}
-[0.000614] (-) JobUnselected: {'identifier': 'turtle_chase'}
-[0.000628] (-) EventReactorShutdown: {}

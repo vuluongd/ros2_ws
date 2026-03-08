@@ -1,3 +1,0 @@
-[console_scripts]
-turtle_leader_follower = turtle_chase.turtle_chaser_node:main
-
