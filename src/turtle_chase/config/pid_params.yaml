@@ -9,7 +9,7 @@ turtle_leader_follower:
     kd_linear: 0.2
 
     #pid cho angle
-    kp_angular: 4.0
+    kp_angular: 3.0
     ki_angular: 0.05
     kd_angular: 0.3
 

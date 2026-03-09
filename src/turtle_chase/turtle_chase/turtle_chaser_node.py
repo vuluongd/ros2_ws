@@ -14,6 +14,7 @@ class TurtleFollower(Node):
 
         self.prev_angle_error = 0.0
         self.integral_angle = 0.0
+        
         self.prev_time = self.get_clock().now()
 
         #ROS 2 parameter
