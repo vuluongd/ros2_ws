@@ -31,7 +31,7 @@ def generate_launch_description():
         ExecuteProcess(
             cmd = [
                 'ros2', 'service', 'call', '/spawn', 'turtlesim/srv/Spawn', 
-                '{x; 4.0, y: 4.0, theta: 0.0, name: "turtle3"}',
+                '{x: 4.0, y: 4.0, theta: 0.0, name: "turtle3"}',
             ],
             output = 'screen'
         ),
@@ -39,7 +39,7 @@ def generate_launch_description():
         ExecuteProcess(
             cmd = [
                 'ros2', 'service', 'call', '/spawn', 'turtlesim/srv/Spawn',
-                '{x: 6.0, y: 6.0, theta: 0.0, name:"turtle4"}',
+                '{x: 6.0, y: 6.0, theta: 0.0, name: "turtle4"}',
             ],
         ),
         # chạy node turtle_leader_follower với parameter từ yaml
@@ -47,7 +47,19 @@ def generate_launch_description():
             package = 'turtle_chase',
             executable = 'multi_turtle_follower',
             output = 'screen',
-            parameters = [config]
+            parameters = [config,{"leader": "turtle1", "follower": "turtle2"}]
+        ),
+        Node(
+            package = 'turtle_chase',
+            executable = 'multi_turtle_follower',
+            output = 'screen',
+            parameters = [config, {"leader": "turtle1", "follower": "turtle3"}]
+        ),
+        Node(
+            package = 'turtle_chase',
+            executable = 'multi_turtle_follower',
+            output = 'screen',
+            parameters = [config, {"leader": "turtle1", "follower": "turtle4"}]
         )
 
     ])

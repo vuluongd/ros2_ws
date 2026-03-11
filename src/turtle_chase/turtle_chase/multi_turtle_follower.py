@@ -7,7 +7,7 @@ import math
 class TurtleFollower(Node):
 
     def __init__(self):
-        super().__init__('turtle_follower')
+        super().__init__('multi_turtle_follower')
         #các biến của bộ điều khiển pid
         self.prev_distance_error = 0.0
         self.integral_distance = 0.0
