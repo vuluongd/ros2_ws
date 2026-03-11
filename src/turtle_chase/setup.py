@@ -11,6 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/turtle_leader_follower.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/multi_turtle_follower.launch.py'])
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -26,6 +27,7 @@ setup(
     entry_points={
         'console_scripts': [
             'turtle_leader_follower = turtle_chase.turtle_chaser_node:main'
+            'multi_turtle_follower = turtle_chase.multi_turtle_follower:main'
         ],
     },
 )
