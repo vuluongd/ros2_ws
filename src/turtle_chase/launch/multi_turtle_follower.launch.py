@@ -46,6 +46,7 @@ def generate_launch_description():
         Node(
             package = 'turtle_chase',
             executable = 'multi_turtle_follower',
+            name = 'turtle1',
             output = 'screen',
             parameters = [config,{"leader": "turtle1", "follower": "turtle2"}]
         ),
@@ -53,13 +54,15 @@ def generate_launch_description():
             package = 'turtle_chase',
             executable = 'multi_turtle_follower',
             output = 'screen',
-            parameters = [config, {"leader": "turtle1", "follower": "turtle3"}]
+            name = 'turtle2',
+            parameters = [config, {"leader": "turtle2", "follower": "turtle3"}]
         ),
         Node(
             package = 'turtle_chase',
             executable = 'multi_turtle_follower',
             output = 'screen',
-            parameters = [config, {"leader": "turtle1", "follower": "turtle4"}]
+            name = 'turtle3',
+            parameters = [config, {"leader": "turtle3", "follower": "turtle4"}]
         )
 
     ])
