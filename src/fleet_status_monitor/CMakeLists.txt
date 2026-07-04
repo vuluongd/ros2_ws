@@ -13,6 +13,18 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
+add_executable(fleet_monitor_node
+  src/main.cpp
+)
+ament_target_dependencies(
+  fleet_monitor_node
+  rclcpp
+)
+install(
+  TARGETS fleet_monitor_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

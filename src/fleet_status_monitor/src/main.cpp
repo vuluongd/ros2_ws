@@ -5,7 +5,7 @@ int main(int argc, char *argv[]){
 
     auto node =  std::make_shared<rclcpp::Node>("fleet_monitor");
 
-    RCLCPP_INFO(node->getlogger(), "Fleet Monitor Started");
+    RCLCPP_INFO(node->get_logger(), "Fleet Monitor Started");
     rclcpp::spin(node);
     rclcpp::shutdown();
 
