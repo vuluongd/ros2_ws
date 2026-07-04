@@ -1,12 +1,14 @@
-#include "rclcpp/rclcpp.hpp"
+#include "fleet_status_monitor/fleet_monitor.hpp"
 
-int main(int argc, char *argv[]){
+
+int main(int argc, char *argv[])
+{
     rclcpp::init(argc, argv);
 
-    auto node =  std::make_shared<rclcpp::Node>("fleet_monitor");
+    auto node = std::make_shared<FleetMonitor>();
 
-    RCLCPP_INFO(node->get_logger(), "Fleet Monitor Started");
     rclcpp::spin(node);
+
     rclcpp::shutdown();
 
     return 0;

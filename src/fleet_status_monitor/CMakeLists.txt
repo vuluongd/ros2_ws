@@ -15,10 +15,15 @@ find_package(sensor_msgs REQUIRED)
 
 add_executable(fleet_monitor_node
   src/main.cpp
+  src/fleet_monitor.cpp
 )
 ament_target_dependencies(
   fleet_monitor_node
   rclcpp
+)
+target_include_directories(fleet_monitor_node PUBLIC
+   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+   $<INSTALL_INTERFACE:include>
 )
 install(
   TARGETS fleet_monitor_node
