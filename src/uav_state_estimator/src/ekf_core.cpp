@@ -18,10 +18,11 @@ EkfCore::EkfCore(){
      // Process noise (IMU)
 
      Q_ = Eigen::MatrixXd::Zero(12,12);
-     Q_.block<3,3>(0,0) = Eigen::Matrix3d::Identity() * 0.01; 
-     Q_.block<3,3>(3,3) = Eigen::Matrix3d::Identity() * 0.01;
-     Q_.block<3,3>(6,6) = Eigen::Matrix3d::Identity() * 0.01;
-     
+     Q_.block<3,3>(0,0) = Eigen::Matrix3d::Identity() * 0.01; // gyro noise
+     Q_.block<3,3>(3,3) = Eigen::Matrix3d::Identity() * 0.01; // acc noise
+     Q_.block<3,3>(6,6) = Eigen::Matrix3d::Identity() * 0.001; //gyro bias walk
+     Q_.block<3,3>(9,9) = Eigen::Matrix3d::Identity() * 0.001; //acc bias walk
+
 
 
 
