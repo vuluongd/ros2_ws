@@ -13,7 +13,7 @@ public:
         publisher_ = this->create_publisher<std_msgs::msg::String>("chatter", 10);
         timer_ = this->create_wall_timer(
             1s,
-             std::bind(&MinimalPublisher::timer_callback, this);
+            std::bind(&MinimalPublisher::timer_callback, this)
         );
     }
 private:
